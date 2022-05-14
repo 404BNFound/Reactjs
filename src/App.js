@@ -4,18 +4,19 @@ import Test from './components/Test';
 import Login from './components/Login';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
+import ChoixCapsule from './components/ChoixCapsule';
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Nav />
         <Routes>
           <Route path="/" element={<Test />} />
           <Route path="/Login" element={<Login />} />
+          <Route path="/ChoixCapsule" element={<ChoixCapsule />} />
         </Routes>
-        <div className='contenu'></div>
-        <Footer />
+    
+       
       </Router>
     </div>
   );
