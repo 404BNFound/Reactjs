@@ -18,7 +18,7 @@ import { Button } from '@material-ui/core';
                   <div className='color'>qsdqs
                   </div>
                   <div className='btn'>
-                  <Button variant="contained">Choisir</Button>
+                  <Button variant="contained" className='bouton'>Choisir</Button>
                   </div>
                 </div>
     
