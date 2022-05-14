@@ -56,5 +56,6 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .bouton{
   background: rgb(152,54,217);
+  
   background: linear-gradient(90deg, rgba(152,54,217,1) 0%, rgba(5,242,199,1) 100%); 
 }
