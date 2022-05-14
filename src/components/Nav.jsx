@@ -99,7 +99,7 @@ const Nav = () => {
                 </div>
                 <div className="navCenter">
                     <div className="normalCenter">
-                        <SimpleButton text={"Center"}></SimpleButton>
+                        <SimpleButton text={""}></SimpleButton>
                     </div>
                 </div>
 

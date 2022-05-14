@@ -1,4 +1,10 @@
 .App{
     font-family: 'Work Sans', sans-serif;
     font-size: 15px;
+    background-image: url('./components/assets/images/bg.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contenu{
+    height: 100vh;
 }
