@@ -1,0 +1,54 @@
+.nav{
+    display: grid;
+    position: fixed;
+    top:0;
+    max-height: 50px;
+    width: 100%;
+    grid-template-columns: .6fr 1fr .6fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "navLeft navCenter navRight";
+    grid-gap: 0.2rem
+}
+.nav > .navLeft{
+    grid-area: navLeft;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-left: -10px;
+}
+
+.nav > .navCenter{
+    grid-area: navCenter;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.nav > .navCenter{
+    display: flex;
+    flex-flow: row wrap;
+}
+.nav > .navRight{
+    grid-area: navRight;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+}
+.nav > .navRight .normalRight{
+    display: flex;
+    flex-flow: row wrap;
+}
+.nav div{
+    margin-left: 20px;
+}
+.nav Link{
+    text-decoration: none;
+}
+.fullScreen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width:1450px) {
+    
+}
