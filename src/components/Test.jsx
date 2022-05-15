@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { Grid, Paper, Snackbar, Button, Backdrop, CircularProgress, Alert, AlertTitle } from '@mui/material'
 import AnimatedNumber from 'react-animated-number'
 import './assets/css/Test.css'
@@ -15,11 +16,13 @@ const Test = () => {
     };
     const [number, setNumber] = useState(0)
     useEffect(() => {
-        setNumber(5000)
+        setNumber(4999)
     }, [])
 
     return (
-            <div className="content" style={{textAlign:"center"}}>
+        <>
+        <Link to={"/choixEndroit"}>Chox endroit test</Link>
+            <div className="content" style={{ textAlign: "center" }}>
                 <AnimatedNumber
                     value={number}
                     style={{
@@ -29,8 +32,9 @@ const Test = () => {
                     frameStyle={percentage => percentage > 20 && percentage < 80 ? { opacity: 0.5 } : { opacity: 1 }}
                     duration={2000}
                 >
-                </AnimatedNumber><span style={{fontSize:'2em'}}>Current investors</span>
+                </AnimatedNumber><span style={{ fontSize: '2em' }}>Current investors</span>
             </div>
+        </>
     );
 }
 

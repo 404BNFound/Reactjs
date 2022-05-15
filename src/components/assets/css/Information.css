@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  
+}
+
+.c{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+   
+  
+}
+
+.leftbox{
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+  
+   
+}
+
+.rightbox{
+    flex:0.6;
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+    
+   
+}
+.headerText{
+    text-align: center;
+    padding:2%;
+  }
+  .description{
+    margin-left: 10%;
+  }
+  .col-rb{
+    display: flex;
+    flex-direction: column;
+    height:500px;
+    
+  }
+  .ht{
+  
+    flex: 1;
+  }
+  .desc{
+    
+    flex: 2;
+  }
+  .color{
+    flex: 1;
+  }
+ 
+  .btn{
+    flex: 0.5;
+    margin-top: 5%;
+
+  }
+  .bouton{
+    background: rgb(152,54,217);
+    background: linear-gradient(90deg, rgba(152,54,217,1) 0%, rgba(5,242,199,1) 100%); 
+  }

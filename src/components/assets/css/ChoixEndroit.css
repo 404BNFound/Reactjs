@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+.choixEndroit{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.text{
+    grid-area: text;
+    font-family: 'Fira Code', monospace;
+    font-weight: 400;
+    word-wrap: break-word;
+    font-size: 5vw;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    text-align: center;
+}
+    .text i:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+.places{
+    grid-area: places;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 20vh;
+}
+.places .card:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.selected{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "image desc";
+}
+.selected .image{
+    grid-area: image;
+}
+.selected .desc{
+    grid-area: desc;
+}
+@media only screen and (max-width: 1050px) {
+    .selected{
+        padding: 20px;
+        display: flex;
+        flex-flow: column wrap;
+    }
+  }
