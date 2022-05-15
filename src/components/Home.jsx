@@ -16,7 +16,7 @@ function Home() {
           </div>
 
           <div className='btn'>
-            <Link to="/information">
+            <Link to="/Forfait">
               <Button variant="contained" className='bouton'> Commencez maintenant</Button>
             </Link>
           </div>
