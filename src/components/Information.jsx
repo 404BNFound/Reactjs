@@ -42,8 +42,9 @@ import ReactAudioPlayer from 'react-audio-player';
 
         <div><Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">Dur</InputLabel>
+        <InputLabel id="demo-simple-select-label">Duree</InputLabel>
         <Select
+          sx={{color:'white'}}
           labelId="demo-simple-select-label"
           id="demo-simple-select"
           value={duree}
@@ -59,10 +60,10 @@ import ReactAudioPlayer from 'react-audio-player';
 
 
             <div> <p> Message</p>
-<TextField id="standard-basic" label="Standard" value={mess} variant="standard" onChange={ e=> setmess(e.target.value)} /></div>
+<TextField sx={{color:'white'}} id="standard-basic" label="Standard" value={mess} variant="standard" onChange={ e=> setmess(e.target.value)} /></div>
 
 <div> <p>  URL Vidéo</p>
-<TextField id="standard-basic" label="Standard" value={video} variant="standard" onChange={ e=> setvideo(e.target.value)} /></div>
+<TextField sx={{color:'white'}}  id="standard-basic" label="Standard" value={video} variant="standard" onChange={ e=> setvideo(e.target.value)} /></div>
             <div className='btn'>
                   <Button variant="contained" onSubmit={onSubmit} className='bouton'>Soumettre</Button>
                   </div>
