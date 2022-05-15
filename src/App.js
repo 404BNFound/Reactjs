@@ -6,14 +6,18 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 import ChoixCapsule from './components/ChoixCapsule';
 import ChoixEndroit from './components/ChoixEndroit';
+import Home from './components/Home';
+import Information from './components/Information';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<Test />} />
+          <Route path="/" element={<Home />} />
           <Route path="/Login" element={<Login />} />
+          <Route path="/Information" element={<Information />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/ChoixCapsule" element={<ChoixCapsule />} />
           <Route path="/ChoixEndroit" element={<ChoixEndroit />} />
         </Routes>

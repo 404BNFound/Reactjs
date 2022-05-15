@@ -42,7 +42,7 @@ import ReactAudioPlayer from 'react-audio-player';
 
         <div><Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">Duree</InputLabel>
+        <InputLabel id="demo-simple-select-label">Dur</InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
