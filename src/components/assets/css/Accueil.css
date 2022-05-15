@@ -1,0 +1,61 @@
+body{
+    height:100vh;
+    margin: 0;
+    padding: 0; 
+   }
+   
+   .container{
+     display: flex;
+     height: 100vh;
+     width: 100%;
+    
+   }
+   h1,h2,h3,h4,h5,h6,p{
+     font-family: Fira Code;
+   }
+   .leftbox{
+     flex:1;
+     background: url('../images/terra.jpg');
+     background-size: cover;
+     background-color: red;
+     height: 100vh;
+     width: 100%;
+   }
+   .rightbox{
+     flex:0.4;
+     height: 100vh;
+     width: 100%;
+     padding: 5%;
+   }
+   .headerText{
+     text-align: center;
+     border-left: 3px solid black;
+     padding:2%;
+   }
+   .description{
+     margin-left: 10%;
+   }
+   .col-rb{
+     display: flex;
+     flex-direction: column;
+     height:500px;
+   }
+   .ht{
+   
+     flex: 1;
+   }
+   .desc{
+     
+     flex: 2;
+   }
+   .color{
+     flex: 1;
+   }
+   .btn{
+     flex: 0.5;
+   
+   }
+   .bouton{
+     background: rgb(152,54,217);
+     background: linear-gradient(90deg, rgba(152,54,217,1) 0%, rgba(5,242,199,1) 100%); 
+   }
