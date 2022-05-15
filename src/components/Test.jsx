@@ -15,7 +15,7 @@ const Test = () => {
     };
     const [number, setNumber] = useState(0)
     useEffect(() => {
-        setNumber(5000)
+        setNumber(4999)
     }, [])
 
     return (
