@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Button from '@mui/material/Button';
 
-import PaidIcon from '@mui/icons-material/Paid';
-import { WorkHistoryOutlined } from "@mui/icons-material";
 import Rating from '@mui/material/Rating';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
 import useFetch from "../hooks/useFetch";
 import '../assets/css/cardprice.css';
 import bgback1 from '../assets/img/classicforfait.png';
