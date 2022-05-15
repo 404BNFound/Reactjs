@@ -26,6 +26,7 @@ body{
      height: 100vh;
      width: 100%;
      padding: 5%;
+   
    }
    .headerText{
      text-align: center;
@@ -39,6 +40,7 @@ body{
      display: flex;
      flex-direction: column;
      height:500px;
+     justify-content: center;
    }
    .ht{
    
@@ -53,7 +55,7 @@ body{
    }
    .btn{
      flex: 0.5;
-   
+    
    }
    .bouton{
      background: rgb(152,54,217);
