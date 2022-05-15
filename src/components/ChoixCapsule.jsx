@@ -6,6 +6,7 @@ import useWindowSize from './hooks/useWindowSize'
 import { fontSize } from '@mui/system';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from 'react-router-dom'
 // import AOS from 
 function ChoixCapsule() {
   useEffect(() => {
@@ -23,7 +24,7 @@ function ChoixCapsule() {
           <div className="" style={{ textAlign: 'center' }}><CircularProgress /></div>
         }
         {datas && datas.map((data) => (
-          <div data-aos="slide-right"  onClick={() => { setPreview(data) }} className="card" style={{
+          <div data-aos="slide-right" onClick={() => { setPreview(data) }} className="card" style={{
             margin: '10px',
             padding: '10px',
             wordWrap: 'break-word',
@@ -38,7 +39,7 @@ function ChoixCapsule() {
           </div>
         ))}
       </div>
-      <div  data-aos="fade" style={{ fontSize:'2vw',textAlign: 'center', margin: '50px' }}><h2>Choisissez une des capsules ci-dessus</h2></div>
+      <div data-aos="fade" style={{ fontSize: '2vw', textAlign: 'center', margin: '50px' }}><h2>Choisissez une des capsules ci-dessus</h2></div>
       {!preview &&
         <div style={{ height: '60vh' }}></div>
       }
@@ -73,7 +74,9 @@ function ChoixCapsule() {
                 <div style={{ fontSize: '25px' }}>
                   {preview.description}
                   <p style={{ textAlign: 'center' }}>
-                    <Button variant='contained' style={{ color: 'white', backgroundColor: 'green' }}>Valider</Button>
+                    <Link to="/information">
+                      <Button variant='contained' style={{ color: 'white', backgroundColor: 'green' }}>Valider</Button>
+                    </Link>
                   </p>
                 </div>
               </div>

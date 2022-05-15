@@ -8,6 +8,7 @@ import ChoixCapsule from './components/ChoixCapsule';
 import ChoixEndroit from './components/ChoixEndroit';
 import Home from './components/Home';
 import Information from './components/Information';
+import Forfait from './pages/Forfait';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Login" element={<Login />} />
+          <Route path="/Forfait" element={<Forfait />} />
           <Route path="/Information" element={<Information />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/ChoixCapsule" element={<ChoixCapsule />} />
