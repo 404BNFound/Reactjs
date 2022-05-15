@@ -6,7 +6,6 @@ import { WorkHistoryOutlined } from "@mui/icons-material";
 import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import NumberFormat from 'react-number-format';
 import useFetch from "../hooks/useFetch";
 import '../assets/css/cardprice.css';
 import bgback1 from '../assets/img/classicforfait.png';
@@ -44,7 +43,7 @@ function Forfait() {
                                             <h1 className="card-title border-bottom text-light pb-3 mt-2">{nforfait.nom}</h1>
                                             <p className="h6 text-center text-muted  " >
                                                 <strong>
-                                                    <span className="h1 text-light"><NumberFormat value={nforfait.prix} thousandSeparator=" " decimalSeparator="," displayType={'text'} /></span>
+                                                    <span className="h1 text-light">{nforfait.prix}</span>
                                                 </strong><span className="  text-light"> €</span>
                                             </p>
                                             <div styles={{ backgroundColor: "rgba(255,255,255,0.5)" }}>
@@ -82,7 +81,7 @@ function Forfait() {
                                                             Limite
                                                         </div>
                                                         <div className="col-8 d-flex text-light justify-content-start">
-                                                            <NumberFormat value={nforfait.limiteTaille} thousandSeparator=" " suffix=" Mo" decimalSeparator="," displayType={'text'} />
+                                                            {nforfait.limiteTaille}
                                                         </div>
                                                     </div>
                                                     <p className="card-text  text-light border-top pt-3">{nforfait.description}</p>
