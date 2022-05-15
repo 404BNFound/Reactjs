@@ -11,6 +11,11 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, TextField, CardActionArea, CardActions } from '@mui/material';
+
+import ReactPlayer from 'react-player'
+import Base64Downloader from 'react-base64-downloader';
+import ReactAudioPlayer from 'react-audio-player';
+
 // ...
 
     function Information() {
@@ -70,12 +75,12 @@ import { Button, TextField, CardActionArea, CardActions } from '@mui/material';
                     <p>Durée: {duree} années</p>
                     <p className='description'>Message: {mess} </p>
                           
-                    {/* <div className='video'><ReactPlayer
+                    <div className='video'><ReactPlayer
                       url={video}
                       autoPlay 
                       controls 
                     /> 
-                    </div> */}
+                    </div>
                 
                  
                 </div>
