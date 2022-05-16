@@ -55,7 +55,9 @@ function ChoixCapsule() {
                 <div style={{ fontSize: '1.5vw' }}>
                   {preview.description}
                   <p>
-                    <Button variant='contained' style={{ color: 'white', backgroundColor: 'green' }}>Valider</Button>
+                    <Link to="/information">
+                      <Button variant='contained' style={{ color: 'white', backgroundColor: 'green' }}>Valider</Button>
+                    </Link>
                   </p>
                 </div>
               </div>
