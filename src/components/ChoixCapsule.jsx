@@ -15,7 +15,7 @@ function ChoixCapsule() {
   }, []);
   const [preview, setPreview] = useState('')
   const [color, setColor] = useState('');
-  const { datas, isPending, err } = useFetch('http://localhost:3001/capsule')
+  const { datas, isPending, err } = useFetch('https://brainnotfoundserver.herokuapp.com/capsule')
   const { width } = useWindowSize()
   return (
     <div className="choixCapsule" data-aos="slide-down">
