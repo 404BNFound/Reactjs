@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 import './assets/css/ChoixEndroit.css'
 import { useState } from 'react';
 const ChoixEndroit = () => {
-    const { datas, isPending, err } = useFetch('http://localhost:3001/endroit')
+    const { datas, isPending, err } = useFetch('https://brainnotfoundserver.herokuapp.com/endroit')
     const [destination, setDestination] = useState(null)
     const handleValidate = () => {
 
